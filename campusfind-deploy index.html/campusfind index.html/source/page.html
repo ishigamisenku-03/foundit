@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#174e3e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='17' fill='%23174e3e'/%3E%3Cpath d='M32 52S48 38 48 25a16 16 0 0 0-32 0c0 13 16 27 16 27Z' fill='none' stroke='%23cdf28c' stroke-width='3'/%3E%3Cpath d='m24 24 8 8 8-8' fill='none' stroke='%23cdf28c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <meta name="description" content="CampusFind brings lost things and kind people back together. Search, report, and reunite items on campus.">
+  <meta name="referrer" content="no-referrer">
+  <title>CampusFind — Lost things. Found connections.</title>
+  <style>
+/* BUNDLED_STYLES */
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+    <symbol id="i-logo" viewBox="0 0 32 32"><path d="M16 27s10-7.8 10-16a10 10 0 1 0-20 0c0 8.2 10 16 10 16Z"/><path d="m12.2 10.9 3.8 4.2 3.8-4.2a2.7 2.7 0 0 1 4 3.7L16 22l-7.8-7.4a2.7 2.7 0 0 1 4-3.7Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.9" cy="10.9" r="7.2"/><path d="m16.2 16.2 5 5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5.1 5.1L20 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20 5.5a5.1 5.1 0 0 0-7.2 0L12 6.3l-.8-.8A5.1 5.1 0 0 0 4 12.7L12 21l8-8.3a5.1 5.1 0 0 0 0-7.2Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 20 6v6c0 4.5-2.7 7.6-8 10-5.3-2.4-8-5.5-8-10V6l8-4Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-4 4 4-4 4 4M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V3m-4 4 4-4 4 4M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="m4 16-1 5 5-1L20 8a3 3 0 0 0-4-4L4 16Z"/><path d="m14 6 4 4"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3m3 0-1 14H7L6 7m4 4v6m4-6v6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-bottle" viewBox="0 0 64 64"><path d="M25 7h14v8l-3 4v4c6 3 8 8 8 14v16c0 4-3 6-7 6H27c-4 0-7-2-7-6V37c0-6 2-11 8-14v-4l-3-4V7Z"/><path d="M24 15h16M21 37h22M21 47h22M29 7v-3h6v3"/></symbol>
+    <symbol id="i-headphones" viewBox="0 0 64 64"><path d="M12 36V30a20 20 0 0 1 40 0v6M12 36c-4 1-6 5-6 10s2 10 7 11l6 1V35l-7 1ZM52 36c4 1 6 5 6 10s-2 10-7 11l-6 1V35l7 1ZM45 55c0 6-6 7-13 7"/></symbol>
+    <symbol id="i-keys" viewBox="0 0 64 64"><circle cx="23" cy="21" r="11"/><circle cx="23" cy="21" r="3"/><path d="m31 29 22 22v7h-8l-4-5-5 2-3-6-5 1-9-10"/></symbol>
+    <symbol id="i-id" viewBox="0 0 64 64"><rect x="7" y="14" width="50" height="38" rx="5"/><circle cx="23" cy="30" r="6"/><path d="M13 44c1-6 4-8 10-8s9 2 10 8M39 28h11M39 36h11M39 44h8"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 64 64"><path d="M14 23c0-5 3-8 8-8h20c5 0 8 3 8 8v29c0 5-3 8-8 8H22c-5 0-8-3-8-8V23Z"/><path d="M24 16V13a8 8 0 0 1 16 0v3M14 34h36M24 33v6h16v-6"/></symbol>
+    <symbol id="i-umbrella" viewBox="0 0 64 64"><path d="M7 31a25 25 0 0 1 50 0c-5-5-9-5-13 0-4-5-8-5-12 0-4-5-8-5-12 0-4-5-8-5-13 0Z"/><path d="M32 31v22c0 9 14 9 14 0M32 6V3"/></symbol>
+    <symbol id="i-box" viewBox="0 0 64 64"><path d="m8 18 24-10 24 10v29L32 58 8 47V18Z"/><path d="m8 18 24 11 24-11M32 29v29M20 13l24 11"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="#top" aria-label="CampusFind home"><span class="logo-mark"><svg class="icon" aria-hidden="true"><use href="#i-logo"/></svg></span>CampusFind<span class="sr-only"> home</span></a>
+      <div class="nav-links"><a href="#browse">Browse items</a><a href="#how">How it works</a><a href="#safety">Stay safe</a></div>
+      <div class="nav-actions"><button class="button nav-cta" type="button" data-post="found"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>Post an item</button><button class="menu-toggle" type="button" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileLinks"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button></div>
+    </nav>
+    <div class="mobile-links" id="mobileLinks" hidden><a href="#browse">Browse items</a><a href="#how">How it works</a><a href="#safety">Stay safe</a></div>
+  </header>
+  <div class="mode-banner" id="modeBanner" role="status"><div class="mode-inner"><span class="mode-dot" aria-hidden="true"></span><span id="modeText">Connecting to the community board…</span><button id="retryBtn" type="button" hidden>Retry connection</button></div></div>
+
+  <main id="top" class="container">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <span class="eyebrow">The campus lost &amp; found</span>
+        <h1 id="heroTitle">Good things find <em>their way home.</em></h1>
+        <p class="hero-lede">Lost something? Found someone’s treasure? A little kindness is all it takes to bring it back together.</p>
+        <div class="hero-buttons"><a class="button button-lime" href="#browse" id="heroBrowse">Find my item <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><button class="button hero-outline" type="button" data-post="found">I found something</button></div>
+        <p class="hero-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>A kinder campus starts with a safer handover.</p>
+      </div>
+      <div class="hero-scene" aria-hidden="true">
+        <svg class="path-lines" viewBox="0 0 440 460" preserveAspectRatio="none"><path d="M84 124C205 104 145 315 345 313"/></svg>
+        <span class="hero-spark one">✳</span><span class="hero-spark two">✦</span>
+        <div class="float-card first"><span class="float-icon bottle"><svg class="icon"><use href="#i-bottle"/></svg></span><div><span class="float-label">Found near the library</span><strong>A familiar blue bottle</strong><small>Looking for its owner</small></div></div>
+        <div class="reunion-seal"><svg class="icon"><use href="#i-check"/></svg><span>BACK HOME!</span></div>
+        <div class="float-card second"><span class="float-icon headphones"><svg class="icon"><use href="#i-headphones"/></svg></span><div><span class="float-label">Lost after class</span><strong>Headphones &amp; hope</strong><small>Community on the case</small></div></div>
+      </div>
+    </section>
+
+    <div class="metrics" aria-label="Community activity">
+      <div class="metric"><span class="metric-icon"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></span><div><strong id="foundCount">—</strong><span>Found &amp; waiting</span></div></div>
+      <div class="metric"><span class="metric-icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span><div><strong id="lostCount">—</strong><span>Looking for home</span></div></div>
+      <div class="metric"><span class="metric-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><div><strong id="returnCount">—</strong><span>Marked reunited</span></div></div>
+    </div>
+
+    <section id="browse" class="section browse-section" aria-labelledby="browseTitle">
+      <div class="section-heading"><div><span class="section-kicker">THE COMMUNITY BOARD</span><h2 id="browseTitle">Find what matters.</h2><p>Take a look around. Your lost thing might already be here.</p></div><button class="section-link" type="button" data-post="lost">Can't find it? Report a loss <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+      <div class="filters">
+        <label class="search-field" for="search"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><input id="search" type="search" placeholder="Search items, places, or descriptions…" autocomplete="off" maxlength="100"><button class="search-clear" id="clearSearch" type="button" aria-label="Clear search" hidden><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></label>
+        <div class="filter-row"><div class="segmented" role="group" aria-label="Filter by listing type"><button type="button" data-type="all" aria-pressed="true">All items</button><button type="button" data-type="found" aria-pressed="false">Found</button><button type="button" data-type="lost" aria-pressed="false">Lost</button></div><label class="filter-select" for="category"><span>Category</span><select id="category"><option value="all">All categories</option><option>Electronics</option><option>Bottles</option><option>Keys</option><option>ID cards</option><option>Bags</option><option>Umbrellas</option><option>Other</option></select></label><label class="filter-select" for="sort"><span>Sort by</span><select id="sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></label></div>
+      </div>
+      <div class="results-bar"><div id="resultCount" role="status">Looking for listings…</div><button id="resetFilters" type="button" hidden>Clear all filters</button></div>
+      <div id="grid" class="listings" aria-live="polite" aria-busy="true"><div class="loading-card" aria-hidden="true"></div><div class="loading-card" aria-hidden="true"></div><div class="loading-card" aria-hidden="true"></div></div>
+      <button class="button button-light load-more" id="loadMore" type="button" hidden>Show more items <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    </section>
+
+    <section id="how" class="steps-section" aria-labelledby="howTitle"><div class="steps-head"><span class="section-kicker">SMALL ACTS. BIG DIFFERENCE.</span><h2 id="howTitle">Reunions, made simple.</h2><p>Whether you’ve lost something or found it, you’re only a few steps from making someone’s day.</p></div><div class="steps-grid"><article class="step-card"><div class="step-head"><span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></span><span class="step-number">01</span></div><h3>Spot it</h3><p>Search the board or check where you last saw your item. A place and a date can go a long way.</p></article><article class="step-card"><div class="step-head"><span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></span><span class="step-number">02</span></div><h3>Share it</h3><p>Post what you know. Add a photo if it’s safe to share, and see posts that might be a match.</p></article><article class="step-card"><div class="step-head"><span class="step-icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span><span class="step-number">03</span></div><h3>Bring it home</h3><p>Check a private detail only the owner knows, then meet at a staffed campus desk for handover.</p></article></div></section>
+
+    <section id="safety" class="safety-section" aria-labelledby="safetyTitle"><div><span class="section-kicker">LOOK OUT FOR EACH OTHER</span><h2 id="safetyTitle">A safe return is a happy return.</h2><p>CampusFind helps people connect; it cannot verify identities or prove ownership. Keep identifying details out of public posts and arrange exchanges at a staffed campus location.</p></div><div class="safety-points"><div class="safety-point"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Ask for a private detail before handing an item over.</div><div class="safety-point"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Meet at a staffed campus desk, not alone.</div><div class="safety-point"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>Blur IDs, addresses, and personal details in photos.</div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><div><a class="logo" href="#top"><span class="logo-mark"><svg class="icon" aria-hidden="true"><use href="#i-logo"/></svg></span>CampusFind</a><p>A place for lost things, found kindness, and the little moments that bring a campus together.</p></div><div class="footer-links"><a href="#browse">Browse items</a><a href="#how">How it works</a><a href="#safety">Safety tips</a><a href="#top">Back to top ↑</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> CampusFind. Made for good neighbors.</span><span id="footerMode">Checking board connection…</span></div></footer>
+
+  <dialog id="postDialog" aria-labelledby="postTitle"><div class="dialog-top"><div><span class="dialog-eyebrow">HELP IT FIND ITS WAY BACK</span><h2 id="postTitle">Post an item</h2><p>A few useful details can make a big difference.</p></div><button class="icon-button" type="button" id="postClose" aria-label="Close form"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+    <form id="postForm" class="post-form" enctype="multipart/form-data" novalidate><span class="form-label" id="typeLabel">What happened?</span><div class="type-picker" role="group" aria-labelledby="typeLabel"><label class="type-choice"><input type="radio" name="type" value="found" checked><span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>I found something</span></label><label class="type-choice"><input type="radio" name="type" value="lost"><span><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>I lost something</span></label></div>
+      <div class="field-grid"><div class="field full"><label class="form-label" for="itemTitle">Item title</label><input id="itemTitle" name="title" required minlength="3" maxlength="90" placeholder="e.g. Blue water bottle with stickers" autocomplete="off"></div><div class="field"><label class="form-label" for="itemCategory">Category</label><select id="itemCategory" name="category" required><option value="" disabled selected>Choose a category</option><option>Electronics</option><option>Bottles</option><option>Keys</option><option>ID cards</option><option>Bags</option><option>Umbrellas</option><option>Other</option></select></div><div class="field"><label class="form-label" for="itemDate">Date lost or found</label><input id="itemDate" name="date" type="date" required></div><div class="field full"><label class="form-label" for="itemLocation">Last known location</label><input id="itemLocation" name="location" required minlength="3" maxlength="100" placeholder="e.g. Central Library, ground floor" autocomplete="off"></div><div class="field full"><label class="form-label" for="itemDescription">Helpful description</label><textarea id="itemDescription" name="description" required minlength="12" maxlength="800" placeholder="What does it look like? Where exactly was it? Keep unique identifying details private."></textarea><small class="hint">Include useful clues, but save proof-of-ownership details for a private conversation.</small></div><div class="field full"><span class="form-label">Photo <small>(optional, max 5 MB)</small></span><label class="photo-picker" for="photo"><span class="photo-icon"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg></span><span><strong id="photoName">Add a photo</strong><small>JPG, PNG or WebP · Personal info should be hidden</small></span><img id="photoPreview" alt="Selected photo preview" hidden><input id="photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp"></label></div><div class="field full"><label class="form-label" for="contactEmail">Public contact email <small>(optional)</small></label><input id="contactEmail" name="contactEmail" type="email" maxlength="160" placeholder="yourname@campus.edu" autocomplete="email"><small class="hint">If provided, it appears publicly on your listing. There is no in-app messaging or automatic email.</small></div></div>
+      <div class="honeypot" aria-hidden="true"><label for="website">Leave this blank</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div><div class="privacy-note" style="margin-top:17px"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><span>Listings on the shared board can be seen by anyone with this site’s link. Don’t publish student ID numbers, passwords, or private contact information.</span></div><div class="form-error" id="formError" role="alert"></div><div class="form-actions"><button class="button button-light" type="button" id="postCancel">Cancel</button><button class="button" id="saveButton" type="submit">Post item <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+    </form>
+  </dialog>
+
+  <dialog id="detailDialog" class="detail-dialog" aria-label="Item details"><button class="icon-button detail-close" type="button" id="detailClose" aria-label="Close item details"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><div id="detailContent"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script>
+/* BUNDLED_SCRIPT */
+  </script>
+</body>
+</html>
